@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Emenike Stephanie</title>
+	</head>
+	<body>
+		<article class="profile-card" data-testid="test-profile-card">
+			<section class="user-profile">
+				<header class="profile-header">
+					<figure>
+						<img
+							class="user-img"
+							data-testid="test-user-avatar"
+							src="Stephanie.png"
+							alt="Photo of Stephanie"
+						/>
+					</figure>
+
+					<h2
+						class="username"
+						aria-label="username"
+						data-testid="test-user-name"
+					>
+						StephanieEA
+					</h2>
+				</header>
+
+				<p data-testid="test-user-time" class="current-time">
+					
+				</p>
+			</section>
+			<section class="user-info">
+				<div class="bio-info">
+					<h3>Bio</h3>
+					<hr />
+					<p class="bio-pg" data-testid="test-user-bio">
+						Results-driven Frontend Engineer with 1 year of experience building responsive, user-friendly web applications using React, Next.js, and Tailwind CSS. Skilled in UI/UX design, API integration, accessibility, and performance optimization to deliver scalable, high-performing, and visually appealing solutions.
+					</p>
+				</div>
+				<div class="preferences">
+					<section class="hobbies-info">
+						<h3>Hobbies</h3>
+						<hr />
+						<ul class="hobbies-list list" data-testid="test-user-hobbies">
+							<li>Reading</li>
+							<li>Listening to music</li>
+							<li>Watching series and movies</li>
+							<li>Playing sudoku and jigsaw puzzles</li>
+						</ul>
+					</section>
+					<section class="dislikes-info">
+						<h3>Dislikes</h3>
+						<hr />
+						<ul class="dislikes-list list" data-testid="test-user-dislikes">
+							<li>Loud noises</li>
+							<li>People who are unnecessarily mean</li>
+							<li>Judgemental people</li>
+							<li>Boring books</li>
+						</ul>
+					</section>
+				</div>
+				<div class="social-links">
+					<h3>Social Links</h3>
+					<hr />
+					<ul class="social-links-list" data-testid="test-user-social-links">
+						<li data-testid="test-user-social-github">
+							<a
+								href="https://github.com/Stephanie-17"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="link"
+							>
+								<div class="github icon-container">
+									<img src="github-icon.svg" alt="Github icon" />
+								</div>
+								<p class="icon-name">Github</p>
+							</a>
+						</li>
+						<li data-testid="test-user-social-linkedin">
+							<a
+								href="https://www.linkedin.com/in/stephanie-emenike-262355330/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="link"
+							>
+								<div class="linkedin icon-container">
+									<img src="linkedin-icon.svg" alt="Linkedin icon" />
+								</div>
+								<p class="icon-name">LinkedIn</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</article>
+    <script src="script.js"></script>
+	</body>
+</html>

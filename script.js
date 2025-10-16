@@ -1,0 +1,1 @@
+document.querySelector('[data-testid="test-user-time"]').innerText=`Current time (ms): ${Date.now()}`

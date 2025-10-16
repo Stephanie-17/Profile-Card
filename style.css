@@ -1,0 +1,140 @@
+body{
+  background-color: #0a0f24;
+  font-family: open sans;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cccbcb;
+  line-height: 1.6;
+  font-size: 14px;
+}
+h2,h3{
+  color: #ffeeb3;
+}
+hr{
+  background-color: #FFD700;
+}
+.profile-card{
+  box-shadow: 0px 4px 12px black;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.profile-header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.user-profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+figure{
+  border: 3px solid #ffeeb3;
+  border-radius:120px ;
+}
+.user-img{
+  width: 200px;
+  margin-bottom: -6px;
+}
+.username{
+  font-size: 25px;
+}
+.current-time{
+  color: #f5e37e;
+}
+.user-info{
+  padding: 10px 15px;
+  background-color: #22273A;
+  margin-top: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+h3{
+  font-size: 20px;
+}
+.bio-pg{
+  color: #f5e37e;
+}
+.social-links-list{
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.icon-container{
+  background-color: #FFD700;
+  display: flex;
+  align-items: center;
+   justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 3px;
+}
+ul{
+  padding-left: 17px;
+  margin-bottom: 0;
+}
+.link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  color: #cccbcb;
+  /* height: 54px; */
+}
+a:focus {
+  outline: 2px solid #FFD700;
+  outline-offset: 3px;
+}
+.icon-name{
+  margin: 3px;
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .profile-card{
+    width: 500px;
+  }
+}
+
+
+@media (min-width:800px) {
+  body{
+    height: 100vh;
+  }
+  .profile-card{
+    display: flex;
+    align-items: flex-start;
+  }
+  .user-img{
+    width: 250px;
+  }
+  figure{
+    border-radius: 150px;
+  }
+  .user-info{
+    margin-top: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius: 0;
+  }
+  .preferences{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+@media (min-width:970px) {
+  .profile-card{
+    width: 850px;
+    
+  }
+  
+}
