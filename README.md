@@ -20,7 +20,7 @@ The card is fully **responsive** and uses **semantic HTML** for accessibility. I
 
 ## Live Demo
 
-[View the project here](https://yourproject.netlify.app)  
+[View the project here](https://stephanie-17.github.io/Profile-Card/)  
 
 
 ---
