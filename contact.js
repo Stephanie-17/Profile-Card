@@ -2,6 +2,7 @@ const inputs = document.querySelectorAll("input");
 const messageInput = document.getElementById("message");
 const errorMessages = document.querySelectorAll(".error-message");
 const successMessage = document.querySelector(".success");
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 let checks = 0;
 
 
@@ -14,6 +15,11 @@ document.querySelector("form").addEventListener("submit", (e) => {
 	checkMessageValidity();
 	if (checks === 5) {
 		successMessage.classList.add("successful");
+
+		setTimeout(() => {
+				successMessage.classList.remove('successful')
+		}, 5000);
+	
 		document.querySelector("form").reset();
 		checks = 0;
 	}
@@ -34,7 +40,7 @@ function checkInputValidity() {
 
 function checkEmailValidity() {
 	const email = document.getElementById("email");
-	if (!email.value.includes("@") || email.value.trim() === "") {
+	if (!emailRegex.test(email.value.trim()) || email.value.trim() === "") {
 		document.getElementById("error-email").classList.add("error");
 	} else {
 		checks += 1;
