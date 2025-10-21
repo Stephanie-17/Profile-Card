@@ -4,9 +4,58 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   color: #cccbcb;
   line-height: 1.6;
   font-size: 14px;
+}
+nav {
+	background-color: #1e2239;
+	margin: 0;
+	align-self: stretch;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+}
+nav ul {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+.nav-item {
+	color: white;
+	text-decoration: none;
+	position: relative;
+	transition: color 0.5s;
+}
+.nav-item:focus {
+	outline: 2px solid #f5e37e;
+}
+.nav-item::after {
+	content: "";
+	width: 0%;
+	height: 2px;
+	background-color: #f5e37e;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	transition: width 0.3s;
+}
+.nav-item:hover {
+	color: #f5e797;
+}
+.nav-item:hover::after {
+	width: 100%;
+}
+.nav-item.active{
+	color: #f5e797;
+}
+.nav-item.active::after {
+	width: 100%;
 }
 h2,h3{
   color: #ffeeb3;

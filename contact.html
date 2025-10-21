@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Text me</title>
+		<link rel="stylesheet" href="contact.css" />
+	</head>
+	<body>
+		<nav aria-label="Main Navigation">
+			<ul>
+				<li><a href="index.html" class="nav-item"> Profile </a></li>
+
+				<li><a href="about.html" class="nav-item"> About </a></li>
+
+				<li><a href="contact.html" class="nav-item active"> Contact </a></li>
+			</ul>
+		</nav>
+		<header class="contact-header">
+			<h1>Let's Talk!</h1>
+			<p><i>I'd love to hear from you!</i></p>
+		</header>
+		<form action="">
+			<div class="form-group">
+				<label for="name">Full name:</label>
+				<input
+					type="text"
+					name="name"
+					id="name"
+					data-testid="test-contact-name"
+					placeholder="Spongebob Squarepants"
+					aria-describedby="error-name"
+				/>
+				<span
+					class="error-message"
+					data-testid="test-contact-error-name"
+					id="error-name"
+					>Please fill out your name</span
+				>
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					data-testid="test-contact-email"
+					placeholder="Spongebob@bikini.com"
+					aria-describedby="error-email"
+				/>
+				<span
+					class="error-message"
+					data-testid="test-contact-error-email"
+					id="error-email"
+					>Please input a valid email</span
+				>
+			</div>
+
+			<div class="form-group">
+				<label for="subject">Subject:</label>
+				<input
+					type="text"
+					name="subject"
+					id="subject"
+					data-testid="test-contact-subject"
+					placeholder="I want a website"
+					aria-describedby="error-subject"
+				/>
+				<span
+					class="error-message"
+					data-testid="test-contact-error-subject"
+					id="error-subject"
+					>Please fill out your subject</span
+				>
+			</div>
+			<div class="form-group">
+				<label for="message">Message:</label>
+				<textarea
+					name="message"
+					id="message"
+					data-testid="test-contact-message"
+					placeholder="Well..."
+					aria-describedby="error-message"
+				></textarea>
+				<span
+					class="error-message"
+					data-testid="test-contact-error-message"
+					id="error-message"
+					>Your message should be a minimum of 10 characters</span
+				>
+			</div>
+
+			<button
+				data-testid="test-contact-submit"
+				type="submit"
+				class="submit-btn"
+			>
+				Submit Message
+			</button>
+			<div
+				class="success"
+				data-testid="test-contact-success"
+				role="alert"
+				aria-label="Succes message"
+			>
+				✅ Your message has been sent successfully! <br> I'll get back to you as soon as
+				possible
+			</div>
+		</form>
+		<script src="contact.js"></script>
+	</body>
+</html>
